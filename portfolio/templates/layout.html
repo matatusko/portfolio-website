@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>{% block title %}{% endblock %} - matatusko.com</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <div id="navbar">{% include 'navbar.html' %}</div>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">{% include 'footer.html' %}</div>
+    </body>
+</html>
