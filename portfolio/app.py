@@ -17,3 +17,5 @@ def create_app():
     app.register_blueprint(blog.bp)
 
     return app
+
+app = create_app()
