@@ -1,6 +1,5 @@
 import os
-from flask import Flask, render_template
-from .db import SimpleDatabase
+from flask import Flask
 
 def create_app():
     # Load Flask instance and related setting

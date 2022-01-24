@@ -1,0 +1,69 @@
+/* NAVBAR */
+#navbar {
+   width: 100vw;
+   height: 250px;
+}
+
+.navbar-logo {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: -1;
+   background-image: url('/static/images/logo-lg.png');
+   background-repeat: no-repeat;
+   background-position: 50% 3%;
+}
+
+@media (max-width: 600px) {
+   .navbar-logo {
+      background-image: url('/static/images/logo-sm.png');
+   }
+}
+
+.navbar {
+   display: flex;
+   justify-content: center;
+} 
+
+.navbar-list {
+   display: flex;
+   list-style: none;
+   margin: 0 0 1.5rem 0;
+   padding: 0;
+}
+
+.navbar-item {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+
+   transition: all .25s ease-in-out;
+}
+ 
+.navbar-item:nth-of-type(1):hover {
+   border-bottom: 3px solid #82F3AC;
+   margin: 0 0 -3px 0;
+}
+
+.navbar-item:nth-of-type(2):hover {
+   border-bottom: 3px solid #87C2F0;
+   margin: 0 0 -3px 0;
+}
+
+.navbar-item:nth-of-type(3):hover {
+   border-bottom: 3px solid #FF9D88;
+   margin: 0 0 -3px 0;
+}
+
+.navbar-item a {
+   display: block;
+   text-decoration: none;
+   padding: 1rem 2rem .7rem 2rem;
+   color: #2a2b2a;
+}
+
+/* CONTENT */
+#content {
+   max-width: 800px;
+   margin: 10px auto;
+}
