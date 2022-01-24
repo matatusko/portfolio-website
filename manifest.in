@@ -1,3 +1,0 @@
-graft portfolio/static
-graft portfolio/templates
-global-exclude *.pyc
