@@ -1,3 +1,10 @@
+/* BACKGROUND */
+body {
+   background-color: #fffefe;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 600;
+}
+
 /* NAVBAR */
 #navbar {
    width: 100vw;
@@ -60,6 +67,24 @@
    text-decoration: none;
    padding: 1rem 2rem .7rem 2rem;
    color: #2a2b2a;
+}
+
+/* ICONS */
+.icons-list {
+   display: flex;
+   justify-content: center;
+}
+
+.icon {
+   width: 35px;
+   height: 35px;
+   opacity: .5;
+   transition: opacity .25s ease-in-out;
+   padding: 0 4px;
+}
+
+.icon:hover {
+   opacity: 1;
 }
 
 /* CONTENT */
