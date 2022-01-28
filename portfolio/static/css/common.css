@@ -1,0 +1,32 @@
+/* BACKGROUND */
+body {
+    background-color: #fffefe;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+ }
+
+
+ /* ICONS */
+.icons-list {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .contact-icon {
+    width: 35px;
+    height: 35px;
+    opacity: .25;
+    transition: opacity .25s ease-in-out;
+    padding: 0 4px;
+ }
+ 
+ .contact-icon:hover {
+    opacity: 1;
+ }
+ 
+ 
+ /* CONTENT */
+ #content {
+    max-width: 950px;
+    margin: 10px auto;
+ }
