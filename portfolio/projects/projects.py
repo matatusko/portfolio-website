@@ -6,7 +6,8 @@ bp = Blueprint(
     import_name=__name__, 
     url_prefix='/projects',
     template_folder='templates',
-    static_folder='static',    
+    static_folder='static',
+    static_url_path='/projects/'
 )
 
 @bp.route('/')

@@ -1,33 +1,51 @@
 {% extends "layout.html" %}
 {% block title %}Projects{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/projects.css') }}">
+{% endblock %}
 {% block content %}
 
+<div class="projects-entry">
+    <h2>Projects</h2>
+    <p>Please take a look at some of the stuff I've been working on &#128036;</p>
+</div>
+
 <div class="cards">
-    <div class="card">
-        <span class="card-title">One Chart a Day</span>
-        <img class="card-image" src="#">
-        <span class="card-description">description 1</span>
-    </div>
-    <div class="card">
-        <span class="card-title">PROJECT TITLE THIS ONE IS A BIT LONGER THAN OTHERS</span>
-        <img class="card-image" src="#">
-        <span class="card-description">Another quick project description</span>
-    </div>
-    <div class="card">
-        <span class="card-title">PROJECT TITLE</span>
-        <img class="card-image" src="#">
-        <span class="card-description">how about describe. And perhaps slightly longer just to see how it looks like when rendered on the page</span>
-    </div>
-    <div class="card">
-        <span class="card-title">PROJECT TITLE</span>
-        <img class="card-image" src="#">
-        <span class="card-description">let's see</span>
-    </div>
-    <div class="card">
-        <span class="card-title">PROJECT TITLE</span>
-        <img class="card-image" src="#">
-        <span class="card-description">hm, nathing here! lorem ipsum only</span>
-    </div>
+    <a href="/projects/project-1">
+        <div class="card">
+            <span class="card-title">One Chart a Day</span>
+            <img class="card-image" src="#">
+            <span class="card-description">description 1</span>
+        </div>
+    </a>
+    <a href="/projects/project-2">
+        <div class="card">
+            <span class="card-title">PROJECT TITLE THIS ONE IS A BIT LONGER THAN OTHERS</span>
+            <img class="card-image" src="#">
+            <span class="card-description">Another quick project description</span>
+        </div>
+    </a>
+    <a href="/projects/project-3">
+        <div class="card">
+            <span class="card-title">PROJECT TITLE</span>
+            <img class="card-image" src="#">
+            <span class="card-description">how about describe. And perhaps slightly longer just to see how it looks like when rendered on the page</span>
+        </div>
+    </a>
+    <a href="/projects/project-4">
+        <div class="card">
+            <span class="card-title">PROJECT TITLE</span>
+            <img class="card-image" src="#">
+            <span class="card-description">let's see</span>
+        </div>
+    </a>
+    <a href="/projects/project-5">
+        <div class="card">
+            <span class="card-title">PROJECT TITLE</span>
+            <img class="card-image" src="#">
+            <span class="card-description">hm, nathing here! lorem ipsum only</span>
+        </div>
+    </a>
  </div>
 
 {% endblock %}
