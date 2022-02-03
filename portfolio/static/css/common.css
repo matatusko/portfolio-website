@@ -21,6 +21,18 @@ body {
    text-align: center;
 }
 
+.content-title {
+   margin: 0 auto 40px auto;
+}
+
+.content-title > h2 {
+   margin: 0;
+}
+
+.content-title > p {
+   margin: 10px auto 0 auto;
+}
+
 
 /* ANCHORS */
 a:hover, a:visited, a:link, a:active {

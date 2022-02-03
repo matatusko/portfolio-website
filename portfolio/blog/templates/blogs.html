@@ -1,7 +1,34 @@
 {% extends "layout.html" %}
 {% block title %}Blog{% endblock %}
+
 {% block content %}
 
+<div class="content-title">
+    <h2>Blog</h2>
+    <p>I like scribble some letters down or strum a bunch of notes &#128056;</p>
+    <p>The results of those efforts willsometimes be listed here.</p>
+</div>
 
+<div class="cards">
+    <a href="/blog/blog-1">
+        <div class="card">
+            <span class="card-title">Website is live!</span>
+            <span class="card-description">After long long time finally I have managed to find some will power to sit down and construct my own portfolio website. It is super exciting times!</span>
+        </div>
+    </a>
+    <a href="/blog/blog-2">
+        <div class="card">
+            <span class="card-title">Lorem Ipsum</span>
+            <span class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+        </div>
+    </a>
+    <a href="/blog/blog-3">
+        <div class="card">
+            <span class="card-title">This one has image</span>
+            <img class="card-image" src="#">
+            <span class="card-description">This blog post is different</span>
+        </div>
+    </a>
+ </div>
 
 {% endblock %}
