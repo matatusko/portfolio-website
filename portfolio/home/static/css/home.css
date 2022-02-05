@@ -6,6 +6,11 @@
     margin: 0 auto 15px auto;
 }
 
+#animals-pic {
+    height: 150px;
+    width: auto;
+}
+
 .home-content {
     max-width: 80%;
     margin: 0 auto 20px auto;
@@ -22,3 +27,13 @@
     font-weight: 600;
     margin: 0 0;
 }
+
+@media (max-width: 600px) {
+    .new-section > p {
+        padding: 0 0 0 2%;
+    }
+
+    #animals-pic {
+        height: 100px;
+    }
+ }

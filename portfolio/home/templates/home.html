@@ -11,11 +11,13 @@
     <p>Welcome to my little personal space within the World Wide Web &#128011;</p>
 </div>
 
-<p class="home-content">
-Please take a look at some of the projects I've been working on, 
-or read the scribbles I've put together over at the blog section. 
-For more info about myself, keep scrolling.
-</p>
+<div class="home-content">
+    <p>
+        Please take a look at some of the projects I've been working on, 
+        or read the scribbles I've put together over at the blog section. 
+        For more info about myself, keep scrolling.
+    </p>
+</div>
 
 <div class="new-section">
     <p>Most Recent Updates</p>
@@ -47,6 +49,37 @@ For more info about myself, keep scrolling.
 <div class="new-section">
     <p>About Me</p>
     <hr class="divider">
+</div>
+
+<div class="home-content home-aboutme">
+    <p>
+        I'm a data analyst based in Budapest, Hungary. I enjoy everything data related, 
+        starting from database design and analytics, through data engineering to machine learning and finally ending on visualization,
+        with the latter being my particular area of interest, despite lack of any deeper experience in the field (yet!). 
+    </p>
+    <img id='animals-pic' src="{{ url_for('.static', filename='images/animals.png') }}" alt="My furry children" />
+    <p>
+        I'm a proud father of Pangur Ban the cat and Zaria the dog, pictured above.
+        When I am not spending time with my family or in front of computer learning new programming concepts, 
+        I do enjoy playing music - it's a little dream of mine to be able to compose songs based on 
+        &#119074; groovy bass lines, &#127928; heavy guitars and &#127929; pixel-core sythesisers.    
+    </p>
+</div>
+
+<div class="new-section">
+    <p>Skills</p>
+    <hr class="divider">
+</div>
+
+<div class="home-content home-skills">
+</div>
+
+<div class="new-section">
+    <p>Experience</p>
+    <hr class="divider">
+</div>
+
+<div class="home-content home-experience">
 </div>
 
 {% endblock %}

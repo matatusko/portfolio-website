@@ -1,6 +1,6 @@
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     row-gap: 30px;
