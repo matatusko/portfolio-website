@@ -28,6 +28,16 @@
     margin: 0 0;
 }
 
+.home-skills {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
 @media (max-width: 600px) {
     .new-section > p {
         padding: 0 0 0 2%;
@@ -35,5 +45,9 @@
 
     #animals-pic {
         height: 100px;
+    }
+
+    .home-skills {
+        grid-template-columns: repeat(2, 1fr);
     }
  }
