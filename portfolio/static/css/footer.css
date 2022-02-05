@@ -1,18 +1,6 @@
 /* FOOTER */
 #footer {
-    flex-shrink: 0;
     font-weight: 100;
     text-align: center;
     padding: 10px 0;
-}
-
-.footer-divide {
-    width: 65%;
-    opacity: .5;
-}
-
-@media (max-width: 600px) {
-    .footer-divide {
-        width: 95%;
-    }
 }

@@ -1,11 +1,11 @@
 /* NAVBAR */
 #navbar {
-   width: 100vw;
+   width: 100%;
    min-height: 225px;
 }
 
 .navbar-logo {
-   width: 100%;
+   width: 99%;
    height: 100%;
    position: absolute;
    z-index: -1;
@@ -23,6 +23,7 @@
 .navbar {
    display: flex;
    justify-content: center;
+   font-weight: 600;
 } 
 
 .navbar-list {

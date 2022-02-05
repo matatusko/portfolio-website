@@ -6,11 +6,47 @@
 {% block content %}
 
 <img id='profile-pic' src="{{ url_for('.static', filename='images/profile.png') }}" alt="profile" />
-<h2>Hi, I'm Mat Tatusko</h2>
-<p>Welcome to my little personal space within the World Wide Web &#128011;</p>
-<p>
+<div class="content-title">
+    <h2>Hi, I'm Mat Tatusko</h2>
+    <p>Welcome to my little personal space within the World Wide Web &#128011;</p>
+</div>
 
+<p class="home-content">
+Please take a look at some of the projects I've been working on, 
+or read the scribbles I've put together over at the blog section. 
+For more info about myself, keep scrolling.
 </p>
+
+<div class="new-section">
+    <p>Most Recent Updates</p>
+    <hr class="divider">
+</div>
+
+<div class="cards">
+    <a href="/projects/project-1">
+        <div class="card">
+            <span class="card-title">One Chart a Day</span>
+            <img class="card-image" src="#">
+            <span class="card-description">description 1</span>
+        </div>
+    </a>
+    <a href="/blog/blog-1">
+        <div class="card">
+            <span class="card-title">Website is live!</span>
+            <span class="card-description">After long long time finally I have managed to find some will power to sit down and construct my own portfolio website. It is super exciting times!</span>
+        </div>
+    </a>
+    <a href="/blog/blog-2">
+        <div class="card">
+            <span class="card-title">Lorem Ipsum</span>
+            <span class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+        </div>
+    </a>
+</div>
+
+<div class="new-section">
+    <p>About Me</p>
+    <hr class="divider">
 </div>
 
 {% endblock %}

@@ -4,11 +4,18 @@ html, body {
 }
 
 body {
-   background-color: #fffefe;
+   background-color: #fff8f1;
    font-family: 'Quicksand', sans-serif;
-   font-weight: 600;
    display: flex;
    flex-direction: column;
+}
+
+.font-light {
+   font-weight: 100;
+}
+
+.font-heavt {
+   font-weight: 600;
 }
 
 
@@ -22,15 +29,11 @@ body {
 }
 
 .content-title {
-   margin: 0 auto 40px auto;
+   margin: 0 auto;
 }
 
 .content-title > h2 {
    margin: 0;
-}
-
-.content-title > p {
-   margin: 10px auto 0 auto;
 }
 
 
@@ -42,10 +45,27 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
+/* DIVIDERS */
+.divider {
+   width: 65%;
+   opacity: .5;
+}
+
+@media (max-width: 600px) {
+   .divider {
+       width: 95%;
+   }
+}
+
+
 /* ICONS */
-.icons-list {
+.icon-list {
    display: flex;
    justify-content: center;
+}
+
+#footer > .icon-list {
+   margin: 10px auto;
 }
 
 .contact-icon {
