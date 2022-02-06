@@ -38,6 +38,34 @@
     text-align: left;
 }
 
+.home-experience {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 50px 150px 150px 1fr;
+    justify-items: start;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+.experience-place {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-place {
+    font-weight: 600;
+}
+
+.experience-date {
+    font-size: x-small;
+    font-weight: 100;
+}
+
+.experience-logo {
+    max-width: 40px;
+}
+
 @media (max-width: 600px) {
     .new-section > p {
         padding: 0 0 0 2%;

@@ -5,6 +5,9 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
+<!--######-->
+<!-- MAIN -->
+<!--######-->
 <img id='profile-pic' src="{{ url_for('.static', filename='images/profile.png') }}" alt="profile" />
 <div class="content-title">
     <h2>Hi, I'm Mat Tatusko</h2>
@@ -19,6 +22,10 @@
     </p>
 </div>
 
+
+<!--########-->
+<!-- RECENT -->
+<!--########-->
 <div class="new-section">
     <p>Most Recent Updates</p>
     <hr class="divider">
@@ -46,52 +53,56 @@
     </a>
 </div>
 
+
+<!--#######-->
+<!-- ABOUT -->
+<!--#######-->
 <div class="new-section">
     <p>About Me</p>
     <hr class="divider">
 </div>
 
 <div class="home-content home-aboutme">
-    <p>
-        I'm a data analyst based in Budapest, Hungary. I enjoy everything data related, 
-        starting from database design and analytics, through data engineering to machine learning and finally ending on visualization,
-        with the latter being my particular area of interest, despite lack of any deeper experience in the field (yet!). 
-    </p>
-    <img id='animals-pic' src="{{ url_for('.static', filename='images/animals.png') }}" alt="My furry children" />
-    <p>
-        I'm a proud father of Pangur Ban the cat and Zaria the dog, pictured above.
-        When I am not spending time with my family or in front of computer learning new programming concepts, 
-        I do enjoy playing music - it's a little dream of mine to be able to compose songs based on 
-        &#119074; groovy bass lines, &#127928; heavy guitars and &#127929; pixel-core synthesisers.    
-    </p>
+    {% include 'aboutme.html' %}
 </div>
 
+
+<!--########-->
+<!-- SKILLS -->
+<!--########-->
 <div class="new-section">
     <p>Skills</p>
     <hr class="divider">
 </div>
 
 <div class="home-content home-skills">
-    <div>SQL</div>
-    <div class="meter"><div style="width: 95%"></div></div>
-    <div>Python</div>
-    <div class="meter"><div style="width: 80%"></div></div>
-    <div>JavaScript</div>
-    <div class="meter"><div style="width: 30%"></div></div>
-    <div>Machine Learning</div>
-    <div class="meter"><div style="width: 70%"></div></div>
-    <div>d3.js</div>
-    <div class="meter"><div style="width: 10%"></div></div>
-    <div>Database Design</div>
-    <div class="meter"><div style="width: 65%"></div></div>
+    {% for skill in data['skills'] %}
+        <div>{{ skill['name'] }}</div>
+        <div class="meter"><div style="width: {{ skill['rank'] }}%"></div></div>
+    {% endfor %}
 </div>
 
+
+<!--############-->
+<!-- EXPERIENCE -->
+<!--############-->
 <div class="new-section">
     <p>Experience</p>
     <hr class="divider">
 </div>
 
 <div class="home-content home-experience">
+    {% for experience in data['experience'] %}
+        <div>
+            <img class="experience-logo" src="{{ url_for('.static', filename=experience['logo']) }}" alt="{{ experience['name'] }}" />
+        </div>
+        <div class="experience-place">
+            <span class="experience-name">{{ experience['name'] }}</span>
+            <span class="experience-date">{{ experience['date'] }}</span>
+        </div>
+        <div>{{ experience['role'] }}</div>
+        <div>{{ experience['responsibilities'] }}</div>
+    {% endfor %}
 </div>
 
 {% endblock %}

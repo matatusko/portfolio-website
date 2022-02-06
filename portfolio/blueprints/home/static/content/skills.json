@@ -1,15 +1,15 @@
 {
   "skills": [
-    {"skill": "SQL", "rank": 92},
-    {"skill": "Python", "rank": 74},
-    {"skill": "JavaScript", "rank": 13},
-    {"skill": "Machine Learning", "rank": 64},
-    {"skill": "Artificial Intelligence", "rank": 47},
-    {"skill": "Data Analysis", "rank": 88},
-    {"skill": "Database Design", "rank": 56},
-    {"skill": "Data Visualization", "rank": 41},
-    {"skill": "Web Development", "rank": 51},
-    {"skill": "Problem Solving", "rank": 87},
-    {"skill": "Communication", "rank": 93}
+    {"name": "SQL", "rank": 92},
+    {"name": "Python", "rank": 74},
+    {"name": "JavaScript", "rank": 13},
+    {"name": "Machine Learning", "rank": 64},
+    {"name": "Artificial Intelligence", "rank": 47},
+    {"name": "Data Analysis", "rank": 88},
+    {"name": "Database Design", "rank": 56},
+    {"name": "Data Visualization", "rank": 41},
+    {"name": "Web Development", "rank": 51},
+    {"name": "Problem Solving", "rank": 87},
+    {"name": "Communication", "rank": 93}
   ]
 }

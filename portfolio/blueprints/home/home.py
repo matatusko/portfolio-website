@@ -1,6 +1,9 @@
 from flask import Blueprint
 from flask import render_template
 from portfolio.utils import load_json
+from pathlib import Path
+
+here = Path('blueprints/home/static/content')
 
 bp = Blueprint(
     name='home', 
@@ -13,4 +16,9 @@ bp = Blueprint(
 
 @bp.route('/')
 def home():
-    return render_template('home.html')
+    data = {
+        'skills': load_json(here/'skills.json', key='skills'),
+        'experience': load_json(here/'experience.json', key='experience')
+    }
+
+    return render_template('home.html', data=data)
