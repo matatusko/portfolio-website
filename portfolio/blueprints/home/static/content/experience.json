@@ -4,36 +4,31 @@
       "logo": "images/revolut-logo.png",
       "name": "Revolut",
       "date": "Sep 2021",
-      "role": "Data Analyst",
-      "responsibilities": "will fill later"
+      "role": "Data Analyst"
     },
     {
       "logo": "images/ms-logo.png",
       "name": "Morgan Stanley",
       "date": "Jun 2018 - Sep 2021",
-      "role": "Machine Learning Specialist",
-      "responsibilities": "will fill later"
+      "role": "Machine Learning Specialist"
     },
     {
       "logo": "images/nii-logo.png",
       "name": "National Institute of Informatics, Tokyo",
       "date": "Sep 2017 - Mar 2018",
-      "role": "Researcher",
-      "responsibilities": "will fill later"
+      "role": "NLP Researcher"
     },
     {
       "logo": "images/bristol-uni-logo.png",
       "name": "University of Bristol",
       "date": "Sep 2016 - Sep 2017",
-      "role": "MSc, Computer Science",
-      "responsibilities": "will fill later"
+      "role": "MSc, Computer Science"
     },
     {
       "logo": "images/sheffield-uni-logo.png",
       "name": "University of Sheffield",
       "date": "Sep 2012 - Jul 2016",
-      "role": "BA, Chinese Studies & Business Management",
-      "responsibilities": "will fill later"
+      "role": "BA, Chinese Studies & Business Management"
     }
   ]
 }

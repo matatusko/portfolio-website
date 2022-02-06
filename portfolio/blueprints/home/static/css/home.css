@@ -41,7 +41,7 @@
 .home-experience {
     width: 65%;
     display: grid;
-    grid-template-columns: 50px 150px 150px 1fr;
+    grid-template-columns: 50px 1fr 1fr;
     justify-items: start;
     grid-gap: 10px;
     align-items: center;
@@ -78,5 +78,9 @@
     .home-skills {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-experience {
+        width: 100%;
     }
  }
