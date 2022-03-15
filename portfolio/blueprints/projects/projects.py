@@ -1,5 +1,10 @@
 from flask import Blueprint
 from flask import render_template
+from portfolio.utils import get_files_from_path, load_json 
+from pathlib import Path
+from flask import current_app
+
+HERE = Path('blueprints/projects/static/content')
 
 bp = Blueprint(
     name='projects', 
@@ -12,11 +17,12 @@ bp = Blueprint(
 
 @bp.route('/')
 def projects():
-    return render_template('projects.html')
+    files = get_files_from_path(HERE, ext='.json')
+    projects = [load_json(HERE/file) for file in files]
+    return render_template('projects.html', projects=projects)
 
 @bp.route('/<project_name>')
 def project(project_name):
-    data = {
-        'title': project_name
-    }
-    return render_template('project.html', data=data)
+    file = project_name + '.json'
+    project = load_json(HERE/file)
+    return render_template('project.html', project=project)

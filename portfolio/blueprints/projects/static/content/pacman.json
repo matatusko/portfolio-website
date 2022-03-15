@@ -1,0 +1,19 @@
+{
+    "project_name": "pacman",
+    "title": "Pacman",
+    "subtitle": "Pacman clone written in Java as part of university curriculum",
+    "data": "2017-03-01",
+    "categories": [
+        "Java", "Gamedev"
+    ],
+    "github": "https://github.com/matatusko/Pacman",
+    "title_image": {
+        "type": "online",
+        "path": "https://raw.githubusercontent.com/matatusko/Pacman/master/screenshots/pacman_screenshot_00.png"
+    },
+    "screenshots": [
+        "https://raw.githubusercontent.com/matatusko/Pacman/master/screenshots/pacman_screenshot_00.png",
+        "https://raw.githubusercontent.com/matatusko/Pacman/master/screenshots/pacman_screenshot_01.png"
+    ],
+    "text": ""
+}

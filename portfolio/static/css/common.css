@@ -36,6 +36,18 @@ body {
    margin: 0;
 }
 
+.new-section {
+    margin: 40px auto 0 auto;
+}
+
+.new-section > p {
+    text-align: left;
+    padding: 0 0 0 17.5%;
+    font-size: smaller;
+    font-weight: 600;
+    margin: 0 0;
+}
+
 
 /* ANCHORS */
 a:hover, a:visited, a:link, a:active {

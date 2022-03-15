@@ -13,41 +13,21 @@
 <br>
 
 <div class="cards">
-    <a href="/projects/project-1">
+    
+    {% for project in projects %}
+    <a href="/projects/{{ project['project_name'] }}">
         <div class="card">
-            <span class="card-title">One Chart a Day</span>
-            <img class="card-image" src="#">
-            <span class="card-description">description 1</span>
+            <span class="card-title">{{ project['title'] }}</span>
+            {% if project['title_image']['type'] == 'local' %}
+                <img class="card-image" src="{{ url_for('.static', filename='images/'+project['title_image']['path']) }}">
+            {% else %}
+                <img class="card-image" src="{{ project['title_image']['path'] }}">
+            {% endif %}
+            <span class="card-description">{{ project['subtitle'] }}</span>
         </div>
     </a>
-    <a href="/projects/project-2">
-        <div class="card">
-            <span class="card-title">PROJECT TITLE THIS ONE IS A BIT LONGER THAN OTHERS</span>
-            <img class="card-image" src="#">
-            <span class="card-description">Another quick project description</span>
-        </div>
-    </a>
-    <a href="/projects/project-3">
-        <div class="card">
-            <span class="card-title">PROJECT TITLE</span>
-            <img class="card-image" src="#">
-            <span class="card-description">how about describe. And perhaps slightly longer just to see how it looks like when rendered on the page</span>
-        </div>
-    </a>
-    <a href="/projects/project-4">
-        <div class="card">
-            <span class="card-title">PROJECT TITLE</span>
-            <img class="card-image" src="#">
-            <span class="card-description">let's see</span>
-        </div>
-    </a>
-    <a href="/projects/project-5">
-        <div class="card">
-            <span class="card-title">PROJECT TITLE</span>
-            <img class="card-image" src="#">
-            <span class="card-description">hm, nathing here! lorem ipsum only</span>
-        </div>
-    </a>
- </div>
+    {% endfor %}
+
+</div>
 
 {% endblock %}

@@ -16,18 +16,6 @@
     margin: 0 auto 20px auto;
 }
 
-.new-section {
-    margin: 40px auto 0 auto;
-}
-
-.new-section > p {
-    text-align: left;
-    padding: 0 0 0 17.5%;
-    font-size: smaller;
-    font-weight: 600;
-    margin: 0 0;
-}
-
 .home-skills {
     width: 65%;
     display: grid;

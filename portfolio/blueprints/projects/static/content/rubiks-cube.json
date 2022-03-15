@@ -1,0 +1,19 @@
+{
+    "project_name": "rubiks-cube",
+    "title": "Rubik's Cube",
+    "subtitle": "Fully functional Rubik's Cube for Android, built in C# and Unity",
+    "data": "2018-05-01",
+    "categories": [
+        "C#", "Gamedev", "Unity"
+    ],
+    "github": "https://github.com/matatusko/rubik-cube-unity",
+    "title_image": {
+        "type": "local",
+        "path": "rubiks-cube.png"
+    },
+    "screenshots": [
+        "https://raw.githubusercontent.com/matatusko/rubik-cube-unity/master/screenshots/03.jpg",
+        "https://raw.githubusercontent.com/matatusko/rubik-cube-unity/master/screenshots/04.jpg"
+    ],
+    "text": ""
+}
